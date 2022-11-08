@@ -9,7 +9,7 @@ function hello() {
 //hello();
 
 function App() {
-    debugger
+    //debugger
     return (
         <div>
             <Apptitle />
@@ -27,7 +27,7 @@ function Apptitle() {
 }
 
 function Rating() {
-    debugger
+    console.log("Rating rendered")
     return (
         <div>
             <Star />
@@ -40,7 +40,7 @@ function Rating() {
 }
 
 function Accordion() {
-    debugger
+    console.log("Accordion rendered")
     return (
         <div>
             <h3>Menu</h3>
@@ -54,9 +54,9 @@ function Accordion() {
 }
 
 function Star() {
-    return (
-        <div>star</div>
-    )
+    console.log("Star rendered")
+    return <div>star</div>
+
 }
 
 
