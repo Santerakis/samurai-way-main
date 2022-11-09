@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Accordion from "./components/Accordion";
+import {Rating} from "./components/Rating/Rating";
 
 function hello() {
     debugger
@@ -9,10 +11,10 @@ function hello() {
 //hello();
 
 function App() {
-    //debugger
+    console.log("App rendering")
     return (
         <div>
-            <Apptitle />
+            <AppTitle />
             <Rating />
             <Accordion />
             <Rating />
@@ -20,44 +22,13 @@ function App() {
     );
 }
 
-function Apptitle() {
+function AppTitle() {
+    console.log("AppTitle rendering")
     return (
         <>This is App component !</>
     )
 }
 
-function Rating() {
-    console.log("Rating rendered")
-    return (
-        <div>
-            <Star />
-            <Star />
-            <Star />
-            <Star />
-            <Star />
-        </div>
-    );
-}
-
-function Accordion() {
-    console.log("Accordion rendered")
-    return (
-        <div>
-            <h3>Menu</h3>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-        </div>
-    );
-}
-
-function Star() {
-    console.log("Star rendered")
-    return <div>star</div>
-
-}
 
 
 export default App;
