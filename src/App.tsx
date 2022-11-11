@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Accordion from "./components/Accordion";
+import Accordion___EDIT from "./components/Accordion";
 import {Rating} from "./components/Rating/Rating";
 
 function hello() {
@@ -18,8 +18,8 @@ function App() {
             <PageTitle title={"My friends"}/>
             Article 1
             <Rating value={3}/>
-            <Accordion title={"Menu"} collapsed={true}/>
-            <Accordion title={"Friends"} collapsed={false}/>
+            <Accordion___EDIT title={"Menu"} collapsed={true}/>
+            <Accordion___EDIT title={"Friends"} collapsed={false}/>
             Article 2
             <Rating value={0}/>
             <Rating value={1}/>
